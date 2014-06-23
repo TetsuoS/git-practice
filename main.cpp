@@ -9,16 +9,10 @@ void swap(int *a, int *b){
 }
 
 int main(){
-	int hoge1;
-	int* p_piyo1;
-	hoge1 = 10;
-	p_piyo1 = &hoge1;
-	int hoge2;
-	int* p_piyo2;
-	hoge2=8;
-	p_piyo2=&hoge2;
-	swap(p_piyo1,p_piyo2);
-	cout << *p_piyo1 << ',' << *p_piyo2 << endl;
+	int hoge1 = 10;
+	int hoge2=8;
+	swap(&hoge1,&hoge2);
+	cout << hoge1 << ',' << hoge2 << endl;
 	return 0;
 
 }
